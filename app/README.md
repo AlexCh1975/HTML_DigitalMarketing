@@ -1,3 +1,18 @@
+#### Эффекты 
+
+![](img/scrin_023.png)
+##### :hover
+![](img/scrin_025.png)
+##### :active
+![](img/scrin_024.png)
+##### :hover
+![](img/scrin_026.png)
+##### :hover
+![](img/scrin_027.png)
+
+
+#### Декстоп
+
 ![](img/scrin_001.png)
 ![](img/scrin_002.png)
 ![](img/scrin_003.png)
