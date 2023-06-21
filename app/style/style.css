@@ -27,6 +27,19 @@ body{
 .header__logo{
     display: flex;
     gap: 41px;
+    transition: scale .3s;
+}
+
+.logo:active{
+    transform: scale(.9);
+}
+
+.search{
+    cursor: pointer;
+}
+
+.search:active{
+    transform: scale(.90);
 }
 
 .header__nav{
@@ -43,7 +56,7 @@ body{
 }
 
 .menu__btn:active{
-    transform: scale(90%, 90%);
+    transform: scale(.9);
 }
 
 .header__basket{
@@ -82,17 +95,15 @@ body{
     /* position: fixed; */
     z-index: 2;
     padding: 32px 0 32px 33px ;
-    top: 75px;
-    right: 0;
+    top: 77px;
     width: 232px;  
     background: #FFF;
     box-shadow: -7px 7px 22px 4px rgba(0, 0, 0, 0.1);
-    transition: all .7s;
+    transition: right .7s;
 }
 
 #nav__menu{
-    /* visibility: hidden; */
-    transform: translateX(150%);
+    right: -250px;
 }
 
 .nav__hidden-title{
@@ -209,6 +220,7 @@ body{
     align-items: center;
     cursor: pointer;
     gap: 6px;
+    transition: scale .3s;
 }
 
 .offer__item-title{
@@ -232,6 +244,14 @@ body{
 
 .offer__item4::before{
     content: 'LUXIROUS & TRENDY';
+}
+
+.main__offer-item:hover .offer__item-title{
+    transform: scale(1.05);
+}
+
+.main__offer-item:active .offer__item-title{
+    transform: scale(.96);
 }
 
 .offer__item1, .offer__item2, 
@@ -445,16 +465,18 @@ body{
 }
 
 .info__box:hover{
-    transform: scale(1.2);
-    /* border: 1px solid #F16D7F; */
+    transform: scale(1.05);
+}
+
+.info__box:active{
+    transform: scale(.96);
 }
 
 .info__icon{
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 
 .info__title{
-    /* margin-top: 28px; */
     margin-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
@@ -543,7 +565,7 @@ body{
     background: #E1E1E1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 0;
+    border: none;
 }
 
 .input__btn{
